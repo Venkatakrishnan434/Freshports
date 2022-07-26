@@ -1,0 +1,200 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.navbar{
+    background-color: #252931;
+    
+}
+#clr{
+    color: white;
+}
+#navbarDropdownMenuLink{
+    color: white;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.logoe-img{
+    width: 150px;
+    // margin-left: 90px;
+}
+.navbar-nav{
+    margin-left: -600px;
+}
+.navbar-brand{
+    margin-left: 100px;
+}
+*{
+    box-sizing: border-box;
+}
+.input1{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.input1:hover{
+    border-color: black;
+}
+.input-wrape1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.input-wrape1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 270px;
+
+}
+
+.input1:focus+label ,
+.input1:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.inputs3{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.inputs3:hover{
+    border-color: black;
+}
+.input-wrapes3 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.input-wrapes3{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top:  350px;
+
+}
+
+.inputs3:focus+label ,
+.inputs3:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.rege{
+    margin-top: -350px;
+    margin-left: -190px;
+}
+.cols{
+    color: #26AD6D;
+    text-decoration: none;
+}
+.rege1{
+    margin-top: -5px;
+    margin-left: -300px;
+}
+.cols:hover{
+    color: #26AD6D;
+    text-decoration: none;
+}
+#button{
+    position: absolute;
+    left: 0px;
+    top: 60px;
+}
+#togglePassword{
+    position: absolute;
+    color: #252931;
+    left: 450px;
+    top: 17px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .logoe-img{
+        width:  150px;
+        margin-left: -80px;
+    }
+    .rege{
+        margin-top: -280px;
+        margin-left: -170px;
+    }
+    .rege1{
+        margin-left: -200px;
+    }
+    .input-wrapes3{
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 80px;
+        top:  350px;
+    
+    }
+    .input-wrape1{
+        margin-left: -420px;
+    }
+
+    #button{
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        width: 400px;
+    }
+    .inputs3{
+        width: 400px;
+    }
+    #id_mail{
+        width: 400px;
+    }
+    #togglePassword{
+        position: absolute;
+        color: #252931;
+        left: 350px;
+        top: 17px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+  }

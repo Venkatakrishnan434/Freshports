@@ -1,0 +1,86 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
+    
+    <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto pe-5">
+        <li class="nav-item">
+          <a class="nav-link active" id="clr" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Coaches</a></li>
+            <li><a class="dropdown-item" href="#">Students</a></li>
+            
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">Contact</a>
+        </li>
+      </ul>
+    </div> %>
+  </div>
+</nav>
+
+<h1 class="reg"><strong>REGISTERE HERE,</strong></h1> 
+<p class="reg1">Already have an account? <span class="col"><strong>Sign in</strong></span>          
+
+<form action="/registrations/new" method="post">
+<input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>"
+    />
+<div class="input-wrap">
+        <input type="text" name="user[username]" class="input" required>
+        <label for=""> UserName</label>
+        <div class="box">
+        <%= image_tag('user.png',alt: "background",class: "user-img") %>
+        </div>
+    </div>
+    
+    <div class="input-wrap1">
+        <input type="mail" name="user[email]" class="inputs1" required>
+        <label for="">Email</label>
+         <div class="box1">
+        <%= image_tag('mail.png',alt: "background",class: "mail-img") %>
+        </div>
+    </div>
+
+    <div class="input-wrap2">
+        <input type="text" name="user[phone_no]" class="input2" required>
+        <label for="">Phone No.</label>
+        <div class="box2">
+        <%= image_tag('phone.png',alt: "background",class: "phone-img") %>
+        </div>
+
+        <div class="input-wrap3">
+        <input type="password" name="user[password]" autocomplete="current-password" id="id_password" class="input3" required>
+        <label for="">Password</label>
+         <i class="far fa-eye" id="togglePassword1"></i>
+        <div class="box3">
+        <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
+        </div>
+
+        <div class="input-wrap4">
+        <input type="text" name="user[password_confirmation]" class="input4" required>
+        <label for="">Confirm Password</label>
+        <div class="box4">
+        <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
+        </div>
+        <button type="submit" class="btn btn-dark"><strong>Continue</strong></button>
+        <p class="link">By clicking "<strong>Continue</strong>", I accept the Freshports <a class="link1" href="#"><strong>Terms of Service</strong></a> and <br><a class="link2" href="#"><strong>Privacy Notice.</strong></a></p>
+
+</form>
+    <%= javascript_include_tag 'show1', 'data-turbolinks-track': 'reload' %>

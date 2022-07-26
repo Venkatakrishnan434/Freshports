@@ -1,0 +1,61 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logo-img") %></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto pe-5">
+        <li class="nav-item">
+          <a class="nav-link active" id="clr" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Coaches</a></li>
+            <li><a class="dropdown-item" href="#">Students</a></li>
+            
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<%= image_tag('Rectangle 1.png',alt: "background",class: "back-img") %>
+
+     <h1 class="port"><strong>Create Your<br>Portfolio</strong></h1>
+     <h1 class="txt">Freshports reflect your accomplishments,<br> skills, experiences, and attributes.</h1>
+     <button type="button" id="btn1" class="btn btn-dark"><strong>Learn More</strong></button>
+    <a href="/images/intro.mp4"><button type="button" id="btn2" class="btn btn-outline-secondary"><strong>Watch Now</strong></button></a>
+     <%= video_tag "intro.mp4", controls: "true", class: "video" %>
+
+<div class ="first-div">
+   <div class="cir1">
+   <%= image_tag('face.png',alt: "background",class: "face") %>
+   <p class="fac1"><strong>Introspect</strong></h1>
+   </div>
+   <p class="fac2">An examination of your's<br> <span class="side">own thoughts, feelings, self-awareness</span><br> and self-introspection.</p>
+   <div class="cir2">
+   <%= image_tag('resume.png',alt: "background",class: "face1") %>
+   <p class="fac11"><strong>Resumae</strong></h1>
+   </div>
+   <p class="fac3">Exhibit your profile online</p>
+   <div class="cir3">
+   <%= image_tag('time.png',alt: "background",class: "face2") %>
+   <p class="fac12"><strong>Less Time</strong></h1>
+   </div>
+   <p class="fac4">Reduce your interview <br> <span class="side1">slot time.</span></p>
+</div>
