@@ -1,0 +1,274 @@
+// Place all the styles related to the coaches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.navbar{
+    background-color: #252931;
+    
+}
+#clr{
+    color: white;
+}
+#navbarDropdownMenuLink{
+    color: white;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.logo-img{
+    width: 150px;
+    // margin-left: 90px;   
+}
+.navbar-nav{
+    margin-left: -600px;
+}
+.navbar-brand{
+    margin-left: 100px;
+}
+// #c-img{
+//     border-radius: 50%;
+// }
+// .card{
+//     width: 15%;
+// }
+// #card1{
+//     margin-top: 0%;
+//     margin-left: -65%;
+// }
+// #card2{
+//     margin-top: 10%;
+//     margin-left: 65%;
+// }
+// #item{
+//     width: 200%;
+//     align-items: center;
+// }
+// .card-text{
+//     margin-left: 55px;
+// }
+.wh-div{
+    position: absolute;
+    background-color: white;
+    margin-left: -60%;
+    width: 25%;
+    height: 40%;
+    margin-top: -15%;
+    cursor: pointer;
+}
+.wh-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name{
+    margin-left: 23%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role{
+    margin-top: -2%;
+    margin-left: 30%;
+    font-size: 15px;
+}
+.wh1-div{
+    position: absolute;
+    background-color: white;
+    margin-left: 0%;
+    width: 25%;
+    height: 40%;
+    margin-top: -15%;
+    cursor: pointer;
+}
+.wh1-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name1{
+    margin-left: 26%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role1{
+    margin-top: -2%;
+    margin-left: 42%;
+    font-size: 15px;
+}
+
+.wh2-div{
+    position: absolute;
+    background-color: white;
+    margin-left: 60%;
+    width: 25%;
+    height: 40%;
+    margin-top: -15%;
+    cursor: pointer;
+}
+.wh2-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name2{
+    margin-left: 38%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role2{
+    margin-top: -2%;
+    margin-left: 30%;
+    font-size: 15px;
+}
+.wh3-div{
+    position: absolute;
+    background-color: white;
+    margin-left: -60%;
+    width: 25%;
+    height: 40%;
+    margin-top: 30%;
+    cursor: pointer;
+}
+.wh3-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name3{
+    margin-left: 27%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role3{
+    margin-top: -2%;
+    margin-left: 39%;
+    font-size: 15px;
+}
+.wh4-div{
+    position: absolute;
+    background-color: white;
+    margin-left: 0%;
+    width: 25%;
+    height: 40%;
+    margin-top: 30%;
+    cursor: pointer;
+}
+.wh4-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name4{
+    margin-left: 32%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role4{
+    margin-top: -2%;
+    margin-left: 32%;
+    font-size: 15px;
+}
+.wh5-div{
+    position: absolute;
+    background-color: white;
+    margin-left: 60%;
+    width: 25%;
+    height: 40%;
+    margin-top: 30%;
+    cursor: pointer;
+}
+.wh5-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name5{
+    margin-left: 39%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role5{
+    margin-top: -2%;
+    margin-left: 40%;
+    font-size: 15px;
+}
+.wh6-div{
+    position: absolute;
+    background-color: white;
+    margin-left: -60%;
+    width: 25%;
+    height: 40%;
+    margin-top: 75%;
+    cursor: pointer;
+}
+.wh6-div:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+.shy-img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.name6{
+    margin-left: 23%;
+    margin-top: 3%;
+    font-size: 20px;
+}
+.role6{
+    margin-top: -2%;
+    margin-left: 33%;
+    font-size: 15px;
+}
+
+
+
+
+

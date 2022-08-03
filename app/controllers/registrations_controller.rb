@@ -5,7 +5,7 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # render plain: "Success"
-      redirect_to root_path
+      redirect_to homes_new_path
     else 
       # render plain: "Fail"
       redirect_to registrations_new_path
@@ -17,4 +17,5 @@ class RegistrationsController < ApplicationController
     params.require(:user).permit(:username, :email, :phone_no, :password, :password_confirmation)
   end
 end
+
 

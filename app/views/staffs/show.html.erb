@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @staff.name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @staff.role %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@staff.image,alt: "background",class: "shy-img") %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @staff.link %>
+</p>
+
+<%= link_to 'Edit', edit_staff_path(@staff) %> |
+<%= link_to 'Back', staffs_path %>

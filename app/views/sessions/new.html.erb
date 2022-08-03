@@ -45,20 +45,20 @@
       value="<%= form_authenticity_token %>"
     />
 <div class="input-wrape1">  
-        <input type="mail" autofocus="" name="user[username]" autocapitalize="none" autocomplete="Email" id="id_mail" class="input1" required>
-        <label for="">Username</label>
+        <input type="mail" autofocus="" name="user[email]" autocapitalize="none" autocomplete="Email" id="id_mail" class="input1" required>
+        <label for="">Email</label>
          <div class="box1">
-        <%= image_tag('user.png',alt: "background",class: "user-img") %>
+        <%= image_tag('mail.png',alt: "background",class: "mail-img") %>
         </div>
     </div>
 
 
 <div class="input-wrapes3">
-        <input type="text" name="user[email]" class="inputs3" required>
-        <label for="">Email</label>
+        <input type="password" name="user[password]" class="inputs3" required>
+        <label for="">Password</label>
         <%# <i class="far fa-eye" id="togglePassword"></i> %>
         <div class="box3">
-        <%= image_tag('mail.png',alt: "background",class: "pass-img") %>
+        <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
         </div>
         <button type="submit" id="button" class="btn btn-dark"><strong>Sign in</strong></button>
         <%  if flash[:error]%>
