@@ -1,33 +1,96 @@
+
 <p id="notice"><%= notice %></p>
 
-<h1>Staffs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Role</th>
-      <th>Image</th>
-      <th>Link</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+<nav class="navbar position-absolute top-0 w-100  navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
+    
+     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto pe-5">
+        <li class="nav-item">
+          <a class="nav-link active" id="clr" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Coaches</a></li>
+            <li><a class="dropdown-item" href="#">Students</a></li>
+            
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>  -->
+     <!-- <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"> -->
+     <%= render 'staffs/search_form.html.erb' %>
+    <a href="<%= new_staff_path %>" id="cr-st"> Add Profile: <i class="fa fa-plus" aria-hidden="true"></i></a>
+    </p>
+  </div>
+</nav>
+<div id="staff">
     <% @staffs.each do |staff| %>
-      <tr>
-        <td><%= staff.name %></td>
-        <td><%= staff.role %></td>
-        <td><%= image_tag(staff.image,alt: "background",class: "shy-img") %></td>
-        <td><%= staff.link %></td>
-        <td><%= link_to 'Show', staff %></td>
-        <td><%= link_to 'Edit', edit_staff_path(staff) %></td>
-        <td><%= link_to 'Destroy', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <% @count+= 1%>
+    <div class="card border-0" onclick="popup('pop<%=@count%>')">
+        <p class="st-name  text-center"><%= staff.name %></p>
+        <p class="st-role mb-4 text-center" ><%= staff.role %></p>
+        <p><%= image_tag(staff.image,alt: "background",class: "st-img") %></p>
+        
+       <% if @current_user.role == 'admin' %>
+        <%= link_to '', staff, method: :delete, data: { confirm: 'Are you sure?'}, class: 'fa fa-trash', id: 'de' %>
+        <%end%>
+      </div>
+
+       <div id="pop<%=@count%>" style="display:none;width:100%;height:100%;" class="popup">
+       <div class="backpop">
+
+       </div>
+      <div style="background-color:white;width:70%;height:70%;border-radius:20px;">
+      
+      
+      <div class="all-item">
+      <div class="name-div">
+         <p class="div-name"><%= staff.name %></p>
+        <p class="div-role" ><%= staff.role %></p>
+        <a href="<%= staff.link %>" class="div-link" ><strong>View Profile</strong></a>
+        <div class="vl"></div>
+        <a class="ed" href="/staffs/<%= staff['id'] %>/edit"><strong>Edit Profile</strong></i></a>
+      </div>
+        <p><%= image_tag(staff.image,alt: "background",class: "div-img") %></p>
+        </div>
+        <a class="linkIn1" href="<%= staff.link %>"><i class="fa fa-linkedin"></i></a>
+        <div class="ab1">
+        <p class="div-about"><%= staff.about %></p>
+      </div>
+      <button id="on" onclick="popclose('pop<%=@count%>')"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+     
+
+
+  </div>
 
 <br>
 
-<%= link_to 'New Staff', new_staff_path %>
+<script>
+function popup(div_id){
+  document.getElementById(div_id).style.display="flex"
+}
+function popclose(div_id){
+   document.getElementById(div_id).style.display="none"
+}
+</script>

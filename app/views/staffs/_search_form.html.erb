@@ -1,0 +1,6 @@
+<%= search_form_for @q do |f|%>
+
+
+        <%= f.search_field :name_or_role_cont, class: "form-control mr-sm-2", id: "se", placeholder: "Search" %>
+       <%= f.submit "Search", class:"btn btn-success", id: 'se-bt' %>
+<%end%>

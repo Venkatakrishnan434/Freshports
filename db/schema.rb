@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_03_101011) do
+ActiveRecord::Schema.define(version: 2022_08_09_044331) do
 
   create_table "coaches", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
@@ -41,6 +41,22 @@ ActiveRecord::Schema.define(version: 2022_08_03_101011) do
     t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "about"
+  end
+
+  create_table "students", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.string "proficiency"
+    t.string "portfoliolink"
+    t.string "githubLink"
+    t.text "about"
+    t.string "role"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "instaLink"
+    t.string "faceLink"
+    t.string "linkIn"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -50,6 +66,7 @@ ActiveRecord::Schema.define(version: 2022_08_03_101011) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "role", default: "user"
   end
 
 end

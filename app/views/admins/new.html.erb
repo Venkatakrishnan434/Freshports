@@ -34,19 +34,15 @@
 </nav>
 
 
-
-
-    <h1 class="rege"><strong>WELCOME AGAIN,</strong></h1> 
-<p class="rege1">Don't have an account? <strong><a class="cols" href="#">Sign up</a></strong>
-<form action="/create" method="post">
+ <h1 class="adm1"><strong>WELCOME ADMIN,</strong></h1> 
+<form action="/admin" method="post">
 <input
       type="hidden"
       name="authenticity_token"
       value="<%= form_authenticity_token %>"
     />
 <div class="input-wrape1">  
-        <input type="mail" autofocus="" name="user[email]" autocapitalize="none" autocomplete="Email" id="id_mail" class="input1" required>
-        
+        <input type="mail" autofocus="" name="admin[email]" autocapitalize="none" autocomplete="Email" id="email" class="input1" required>
         <label for="">Email</label>
          <div class="box1">
         <%= image_tag('mail.png',alt: "background",class: "mail-img") %>
@@ -55,18 +51,43 @@
 
 
 <div class="input-wrapes3">
-        <input type="password" name="user[password]" class="inputs3" required>
+        <input type="password" name="admin[password]" id="pass" class="inputs3" required>
         <label for="">Password</label>
         <%# <i class="far fa-eye" id="togglePassword"></i> %>
         <div class="box3">
         <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
         </div>
-        <button type="submit" id="button" class="btn btn-dark"><strong>Sign in</strong></button>
-        <%  if flash[:error]%>
-                <p class="text-danger">
-                <%= flash[:error] %>
-                </p>
-                <% end %>
+        <button type="submit" id="button" class="btn btn-dark"><strong>Let's go </strong></button>
 </div>
-</form>
-          
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %> -->

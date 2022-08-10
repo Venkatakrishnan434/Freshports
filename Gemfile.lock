@@ -85,6 +85,8 @@ GEM
       dotenv (= 2.7.6)
       railties (>= 3.2)
     erubi (1.10.0)
+    faker (2.22.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -146,8 +148,14 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
     rake (13.0.6)
+    ransack (3.0.1)
+      activerecord (>= 6.0.4)
+      activesupport (>= 6.0.4)
+      i18n
     regexp_parser (2.5.0)
     rexml (3.2.5)
+    robocop (0.1.1)
+      rack
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -210,11 +218,14 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   dotenv-rails
+  faker
   jbuilder (~> 2.7)
   mysql2 (~> 0.5)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.6)
+  ransack
+  robocop
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   turbolinks (~> 5)

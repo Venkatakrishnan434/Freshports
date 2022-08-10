@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@student.image,alt: "background",class: "shy-img") %>
+</p>
+
+<p>
+  <strong>Proficiency:</strong>
+  <%= @student.proficiency %>
+</p>
+
+<p>
+  <strong>Portfoliolink:</strong>
+  <%= @student.portfoliolink %>
+</p>
+
+<p>
+  <strong>Githublink:</strong>
+  <%= @student.githubLink %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @student.about %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @student.role %>
+</p>
+
+<p>
+  <strong>instaLink:</strong>
+  <%= @student.instaLink %>
+</p>
+
+<p>
+  <strong>faceLink:</strong>
+  <%= @student.faceLink %>
+</p>
+
+<p>
+  <strong>linkIn:</strong>
+  <%= @student.linkIn %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

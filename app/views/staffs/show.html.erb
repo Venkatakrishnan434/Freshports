@@ -17,7 +17,12 @@
 
 <p>
   <strong>Link:</strong>
-  <%= @staff.link %>
+ <a href="#"> <%= @staff.link %></a>
+</p>
+
+<p>
+  <strong>about:</strong>
+  <%= @staff.about %>
 </p>
 
 <%= link_to 'Edit', edit_staff_path(@staff) %> |

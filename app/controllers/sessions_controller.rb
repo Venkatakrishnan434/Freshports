@@ -1,10 +1,11 @@
 class SessionsController < ApplicationController
+  skip_before_action :ensure_user_logged_in
     def new
     end
     def create
-        if 
-          user = User.find_by(email: user_params["email"])
-          session[:user_id] =user
+       user = User.find_by(email: user_params["email"])
+        if user and user.authenticate(user_params[:password])
+          session[:current_user_id] = user.id
           redirect_to homes_new_path
         else
           flash[:error] = "Invalid mail"
@@ -12,12 +13,12 @@ class SessionsController < ApplicationController
         end
       end
       def logout
-        session[:user_id] = nil
+        session[:current_user_id] = nil
         redirect_to root_path
       end
     
       private
          def user_params
-              params.require(:user).permit(:username,:email)
+              params.require(:user).permit(:email,:password)
          end
 end

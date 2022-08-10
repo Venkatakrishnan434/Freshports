@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :students
+  get 'admins/new'
   resources :staffs
   resources :coaches
   get 'coaches/new'
@@ -7,14 +9,18 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'homes/new'
   get 'coaches/new'
+  get 'admins/new'
   resources :registrations
   resources :sessions
+  resources :homes
 
   match "registrations/new", :to => 'registrations#create', :via=> :post
 
   match "/create",:to=>"sessions#create",:via=>:post
 
   match "/index",:to=>"mains#index",:via=>:get
+
+  match "/admin",:to=>"admins#admin",:via=>:post
 
   match "/logout", :to=>"sessions#logout",:via=>:delete
   # get 'mains/home'

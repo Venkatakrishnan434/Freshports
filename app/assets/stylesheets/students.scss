@@ -1,3 +1,8 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
 // Place all the styles related to the staffs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
@@ -79,7 +84,7 @@
     border-radius: 50%;
     position: relative;
     left: 25%;
-    top: 370px;
+    top: -70px;
 
 }
 // #staff:hover{
@@ -111,8 +116,11 @@
     -webkit-transform: scale(1);
     transform: scale(1); 
      box-shadow: 0 0 11px rgba(33,33,33,.2);
+     transition-duration: .1s;
+     transition-delay: .1s;
+
 }
-#cr-st{
+#cr-st1{
     color: white;
     text-decoration: none;
     left: 90%;
@@ -154,7 +162,8 @@
     width:60%;  
     height:20%;
     border-radius: 50%;
-    margin-top: 36%;
+    margin-top: 39%;
+    margin-left: 5px;
 }
 .div-name{
     font-size: 20px;
@@ -196,8 +205,15 @@
     // display: flex;
 }
 .div-link{
+    position: absolute;
     text-decoration: none;
-    margin-left: -3%;
+    left: 20%;
+    top: 93%;
+    color: #00865E;
+    font-size: 16.3px;
+}
+.div-link:hover{
+    color: #00865E;
 }
 #se{
     position: absolute;
@@ -258,22 +274,47 @@
     transition-duration: 0s;
     transition-delay: 0s;
 }
-.vl {
-    border-left: 2px solid #00865E;
-    height: 20px;
+.po{
+    color: #00865E;
+}
+.git{
     position: absolute;
-    left: 52%;
-    margin-left: -3px;
-    top: 96%;
-  }
-  .linkIn1{
+    color: black;
+    font-size: 30px;
+    left: 22%;
+    top: 73%;
+}
+.git:hover{
+      color: #00865E;
+}
+.insta{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    left: 26%;
+    top: 73%;
+}
+.insta:hover{
+    color: #00865E;
+}
+.face{
     position: absolute;
     color: black;
     font-size: 28px;
-    left: 28.5%;
+    left: 27.5%;
+    top: 69%;
+}
+.face:hover{
+    color: #00865E;
+}
+.linkIn{
+    position: absolute;
+    color: black;
+    font-size: 28px;
+    left: 33%;
     top: 73%;
 }
-.linkIn1:hover{
+.linkIn:hover{
     color: #00865E;
 }
 

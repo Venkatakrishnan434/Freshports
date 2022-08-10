@@ -4,6 +4,10 @@ class StaffsController < ApplicationController
   # GET /staffs or /staffs.json
   def index
     @staffs = Staff.all
+    @count = 0
+    @current_user = current_user
+    @q = Staff.ransack(params[:q])
+    @staffs = @q.result(distinct: true)
   end
 
   # GET /staffs/1 or /staffs/1.json
@@ -65,6 +69,6 @@ class StaffsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def staff_params
-      params.require(:staff).permit(:name, :role, :image, :link)
+      params.require(:staff).permit(:name, :role, :image, :link, :about)
     end
 end

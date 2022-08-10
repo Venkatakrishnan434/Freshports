@@ -1,0 +1,103 @@
+<p id="notice"><%= notice %></p>
+<nav class="navbar position-absolute top-0 w-100  navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
+    
+     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto pe-5">
+        <li class="nav-item">
+          <a class="nav-link active" id="clr" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Coaches</a></li>
+            <li><a class="dropdown-item" href="#">Students</a></li>
+            
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="clr" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>  -->
+     <%= render 'students/search_form.html.erb' %>
+    <a href="<%= new_student_path %>" id="cr-st1">Add Profile: <i class="fa fa-plus" aria-hidden="true"></i></a>
+    </p>
+  </div>
+</nav>
+
+
+
+<div id="staff">
+    <% @students.each do |student| %>
+    <% @count +=1%>
+    <div class="card border-0" onclick="popup('pop<%=@count%>')">
+      <p class="st-name text-center"><%= student.name %></p>
+      <p class="st-role text-center" ><%= student.role %></p>
+        <p><%= image_tag(student.image,alt: "background",class: "st-img") %></p>
+        <!-- <td><%= student.proficiency %></td>
+        <td><%= student.portfoliolink %></td>
+        <td><%= student.githubLink %></td>
+        <td><%= student.about %></td> -->
+
+
+      
+        <%= link_to '', student, method: :delete, data: { confirm: 'Are you sure?'}, class: 'fa fa-trash', id: 'de' %>
+        
+
+    </div>
+    <div id="pop<%=@count%>" style="display:none;width:100%;height:100%;" class="popup">
+      <div class="backpop">
+
+      </div>
+     <div style="background-color:white;width:70%;height:70%;border-radius:20px;">
+      
+      
+     <div class="all-item">
+     <div class="name-div">
+        <p class="div-name"><%= student.name %></p>
+       <p class="div-role" ><%= student.role %></p>
+       <a href="<%= student.portfoliolink %>" class="div-link"><strong>View Profile</strong></a>
+       <div class="vl"></div>
+       <a class="ed" href="/students/<%= student['id'] %>/edit"><strong>Edit Profile</strong></i></a>
+     </div>
+       <p><%= image_tag(student.image,alt: "background",class: "div-img") %></p>
+       </div>
+       <a class="git" href="<%= student.githubLink %>"><i class="fa fa-github"></i></a>
+       <a class="insta" href="<%= student.instaLink %>"><i class="fa fa-instagram"></i></a>
+       <a class="face" href="<%= student.faceLink %>"><i class="fa fa-facebook-f"></i></a>
+       <a class="linkIn" href="<%= student.linkIn %>"><i class="fa fa-linkedin"></i></a>
+       <div class="ab1">
+       <p class="div-about"><%= student.about %></p>
+     </div>
+  
+
+  
+
+     <button id="on" onclick="popclose('pop<%=@count%>')"><i class="fa fa-times" aria-hidden="true"></i></button>
+       </div>
+     </div>
+    <% end %>
+  
+</div>
+<br>
+
+<script>
+  function popup(div_id){
+    document.getElementById(div_id).style.display="flex"
+  }
+  function popclose(div_id){
+     document.getElementById(div_id).style.display="none"
+  }
+  </script>
