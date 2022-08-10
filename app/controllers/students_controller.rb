@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class StudentsController < ApplicationController
-  before_action :set_student, only: %i[ show edit update destroy ]
+  before_action :set_student, only: %i[show edit update destroy]
 
   # GET /students or /students.json
   def index
@@ -10,8 +12,7 @@ class StudentsController < ApplicationController
   end
 
   # GET /students/1 or /students/1.json
-  def show
-  end
+  def show; end
 
   # GET /students/new
   def new
@@ -19,23 +20,20 @@ class StudentsController < ApplicationController
   end
 
   # GET /students/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /students or /students.json
   def create
     @student = Student.new(student_params)
 
-      if @student.save
-         redirect_to students_path, notice: "Student was successfully created." 
-      end
+    redirect_to students_path, notice: 'Student was successfully created.' if @student.save
   end
 
   # PATCH/PUT /students/1 or /students/1.json
   def update
     respond_to do |format|
       if @student.update(student_params)
-        format.html { redirect_to student_url(@student), notice: "Student was successfully updated." }
+        format.html { redirect_to student_url(@student), notice: 'Student was successfully updated.' }
         format.json { render :show, status: :ok, location: @student }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -49,19 +47,21 @@ class StudentsController < ApplicationController
     @student.destroy
 
     respond_to do |format|
-      format.html { redirect_to students_url, notice: "Student was successfully destroyed." }
+      format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_student
-      @student = Student.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def student_params
-      params.require(:student).permit(:name, :image, :proficiency, :portfoliolink, :githubLink, :about, :role, :instaLink, :faceLink, :linkIn)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_student
+    @student = Student.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def student_params
+    params.require(:student).permit(:name, :image, :proficiency, :portfoliolink, :githubLink, :about, :role,
+                                    :instaLink, :faceLink, :linkIn)
+  end
 end
