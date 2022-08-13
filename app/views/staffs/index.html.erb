@@ -1,5 +1,5 @@
 
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 
 
@@ -37,6 +37,7 @@
     </div>  -->
      <!-- <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"> -->
      <%= render 'staffs/search_form.html.erb' %>
+     
     <a href="<%= new_staff_path %>" id="cr-st"> Add Profile: <i class="fa fa-plus" aria-hidden="true"></i></a>
     </p>
   </div>
@@ -47,7 +48,7 @@
     <div class="card border-0" onclick="popup('pop<%=@count%>')">
         <p class="st-name  text-center"><%= staff.name %></p>
         <p class="st-role mb-4 text-center" ><%= staff.role %></p>
-        <p><%= image_tag(staff.image,alt: "background",class: "st-img") %></p>
+        <p><%= image_tag(staff.image, alt: 'background', class: 'st-img') %></p>
         
        <% if @current_user.role == 'admin' %>
         <%= link_to '', staff, method: :delete, data: { confirm: 'Are you sure?'}, class: 'fa fa-trash', id: 'de' %>

@@ -368,6 +368,10 @@ body{
 }
 .col{
     color: #26AD6D;
+    text-decoration: none;
+}
+.col:hover{
+    color: #26AD6D;
 }
 .reg1{
     position: absolute;
