@@ -37,11 +37,14 @@
     </div>  -->
      <!-- <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"> -->
      <%= render 'staffs/search_form.html.erb' %>
+     <!-- <p><%= sort_link(@q, :name, 'Sorting', default_order: :asc)%></p> -->
      
     <a href="<%= new_staff_path %>" id="cr-st"> Add Profile: <i class="fa fa-plus" aria-hidden="true"></i></a>
     </p>
   </div>
 </nav>
+ <!-- <p><%= sort_link(@q, :name, 'Sorting', class: 'sort', default_order: :asc)%></p> -->
+     
 <div id="staff">
     <% @staffs.each do |staff| %>
       <% @count+= 1%>

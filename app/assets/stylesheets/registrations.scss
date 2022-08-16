@@ -345,7 +345,8 @@ body{
     color: white;
 }
 .link{
-    margin-top: 10px;
+    position: absolute;
+    top: 175px;
 }
 .link1{
     color: #26AD6D;
@@ -386,7 +387,13 @@ body{
     font-size: 25px;
     cursor: pointer;
 }
-
+.alert{
+    position: absolute;
+    color: red;
+    font-style: bold;
+    left: 28%;
+    top: -10px;
+}
 
 
 @media (max-width: 600px) {

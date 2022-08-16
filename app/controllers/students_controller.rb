@@ -61,7 +61,7 @@ class StudentsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def student_params
-    params.require(:student).permit(:name, :image, :proficiency, :portfoliolink, :githubLink, :about, :role,
-                                    :instaLink, :faceLink, :linkIn)
+    params.require(:student).permit(:name, :proficiency, :portfoliolink, :githubLink, :about, :role,
+                                    :instaLink, :faceLink, :linkIn, :image)
   end
 end

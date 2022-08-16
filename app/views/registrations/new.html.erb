@@ -80,7 +80,7 @@
         <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
         </div>
         <button type="submit" class="btn btn-dark"><strong>Continue</strong></button>
+            <p class="alert"><%= flash[:alert] %></p>
         <p class="link">By clicking "<strong>Continue</strong>", I accept the Freshports <a class="link1" href="#"><strong>Terms of Service</strong></a> and <br><a class="link2" href="#"><strong>Privacy Notice.</strong></a></p>
-
 </form>
     <%= javascript_include_tag 'show1', 'data-turbolinks-track': 'reload' %>

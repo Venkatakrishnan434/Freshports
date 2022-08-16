@@ -11,7 +11,9 @@ class RegistrationsController < ApplicationController
       redirect_to homes_new_path
     else
       # render plain: "Fail"
+      flash[:alert] = 'Enter the valid Information.'
       redirect_to registrations_new_path
+
     end
   end
 
