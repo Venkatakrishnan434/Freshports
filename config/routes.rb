@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root 'mains#index'
+
   resources :students
   get 'admins/new'
   resources :staffs
   resources :coaches
   get 'coaches/new'
-  root 'mains#index'
+
   get 'registrations/new'
   get 'sessions/new'
   get 'homes/new'

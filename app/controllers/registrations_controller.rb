@@ -8,6 +8,7 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # render plain: "Success"
+      session[:current_user_id] = @user.id
       redirect_to homes_new_path
     else
       # render plain: "Fail"
