@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :coaches
   get 'coaches/new'
 
+  
   get 'registrations/new'
   get 'sessions/new'
   get 'homes/new'
