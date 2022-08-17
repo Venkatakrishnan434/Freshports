@@ -1,10 +1,14 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  root 'mains#index'
+
   resources :students
   get 'admins/new'
   resources :staffs
   resources :coaches
   get 'coaches/new'
-  root 'mains#index'
+
   get 'registrations/new'
   get 'sessions/new'
   get 'homes/new'
@@ -14,15 +18,15 @@ Rails.application.routes.draw do
   resources :sessions
   resources :homes
 
-  match "registrations/new", :to => 'registrations#create', :via=> :post
+  match 'registrations/new', to: 'registrations#create', via: :post
 
-  match "/create",:to=>"sessions#create",:via=>:post
+  match '/create', to: 'sessions#create', via: :post
 
-  match "/index",:to=>"mains#index",:via=>:get
+  match '/index', to: 'mains#index', via: :get
 
-  match "/admin",:to=>"admins#admin",:via=>:post
+  match '/admin', to: 'admins#admin', via: :post
 
-  match "/logout", :to=>"sessions#logout",:via=>:delete
+  match '/logout', to: 'sessions#logout', via: :delete
   # get 'mains/home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -1,6 +1,8 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -20,6 +22,5 @@ module Portfolio
     # config.eager_load_paths << Rails.root.join("extras")
     config.assets.enabled = true
     config.assets.paths << Rails.root.join('/app/assets/fonts')
-
   end
 end

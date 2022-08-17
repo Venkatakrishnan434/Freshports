@@ -7,7 +7,7 @@
     />
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logo-img") %></a>
+    <a class="navbar-brand" href="<%= homes_new_path %>"><%= image_tag('fp logo.png',alt: "logo",class: "logo-img") %></a>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,30 +21,26 @@
           <a class="nav-link" id="clr" href="#">About</a>
         </li>
         
-        <li class="nav-item dropdown">
+        <li id="ho" class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
             Portfolio
           </a>
-          <ul class="dropdown-menu">
-            <% if @current_user.role == 'admin' %>
+          <ul id="ho" class="dropdown-menu">
+           
              <li><a class="dropdown-item" href="/staffs">Staffs</a></li>
             <li><a class="dropdown-item" href="/students">Students</a></li>
-             <li><a class="dropdown-item" href="#">Add</a></li>
-             <%else%>
-              <li><a class="dropdown-item" href="/staffs">Staffs</a></li>
-              <li><a class="dropdown-item" href="/students">Students</a>
-              </li>
-            <%end%>
+             
+            
             
           </ul>
 
         </li>
 
-       <li class="nav-item dropdown">
+       <li id ="ho" class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Profile
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul  id ="ho" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <% if cur_user.nil? %>
                         <li><a class="dropdown-item" href="#"><%= @current_user.username %></a></li>
 
@@ -74,6 +70,7 @@
     <a href="/images/intro.mp4"><button type="button" id="btn2" class="btn btn-outline-secondary"><strong>Watch Now</strong></button></a>
      <%= video_tag "intro.mp4", controls: "true", class: "video" %>
 
+
 <div class ="first-div">
    <div class="cir1">
    <%= image_tag('face.png',alt: "background",class: "face") %>
@@ -91,5 +88,18 @@
    </div>
    <p class="fac4">Reduce your interview <br> <span class="side1">slot time.</span></p>
 </div>
+
+<% if @current_user.role == 'admin'%>
+<li  id ="bo" class="dropdown dropup">
+        <a href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" id="fli" class="btn dropdown-toggle"><i class="fa fa-plus" aria-hidden="true"></i></button> </a>
+          <ul id="ani" class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" id="dropdown-item-id" href="<%=new_student_path%>"><button type="button" id="bo-ani" class="btn"><i id="child" class="fa fa-child" aria-hidden="true"></i>
+           </button> </a></li>
+            <li><a class="dropdown-item" id="dropdown-item-id" href="<%=new_staff_path%>"><button type="button" id="bo-ani1" class="btn"><i id="tea" class="fas fa-chalkboard-teacher"></i></button></a></li>
+            
+          </ul>
+        </li>
+        <%end%>
 
 <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>

@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
+    <a class="navbar-brand" href="<%= root_path %>"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
     
     <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
 </nav>
 
 <h1 class="reg"><strong>REGISTERE HERE,</strong></h1> 
-<p class="reg1">Already have an account? <span class="col"><strong>Sign in</strong></span>          
+<p class="reg1">Already have an account? <span ><a class="col" href="<%=sessions_new_path %>"><strong>Sign in</strong></span></a>      
 
 <form action="/registrations/new" method="post">
 <input
@@ -80,7 +80,7 @@
         <%= image_tag('pass.png',alt: "background",class: "pass-img") %>
         </div>
         <button type="submit" class="btn btn-dark"><strong>Continue</strong></button>
+            <p class="alert"><%= flash[:alert] %></p>
         <p class="link">By clicking "<strong>Continue</strong>", I accept the Freshports <a class="link1" href="#"><strong>Terms of Service</strong></a> and <br><a class="link2" href="#"><strong>Privacy Notice.</strong></a></p>
-
 </form>
     <%= javascript_include_tag 'show1', 'data-turbolinks-track': 'reload' %>

@@ -1,7 +1,7 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 <nav class="navbar position-absolute top-0 w-100  navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
+    <a class="navbar-brand" href="<%= homes_new_path %>"><%= image_tag('fp logo.png',alt: "logo",class: "logos-img") %></a>
     
      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -52,9 +52,8 @@
         <td><%= student.about %></td> -->
 
 
-      
+  
         <%= link_to '', student, method: :delete, data: { confirm: 'Are you sure?'}, class: 'fa fa-trash', id: 'de' %>
-        
 
     </div>
     <div id="pop<%=@count%>" style="display:none;width:100%;height:100%;" class="popup">
@@ -76,7 +75,7 @@
        </div>
        <a class="git" href="<%= student.githubLink %>"><i class="fa fa-github"></i></a>
        <a class="insta" href="<%= student.instaLink %>"><i class="fa fa-instagram"></i></a>
-       <a class="face" href="<%= student.faceLink %>"><i class="fa fa-facebook-f"></i></a>
+       <a class="faceb" href="<%= student.faceLink %>"><i class="fa fa-twitter"></i></a>
        <a class="linkIn" href="<%= student.linkIn %>"><i class="fa fa-linkedin"></i></a>
        <div class="ab1">
        <p class="div-about"><%= student.about %></p>
