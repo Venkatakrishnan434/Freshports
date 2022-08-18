@@ -316,4 +316,317 @@
 .linkIn:hover{
     color: #00865E;
 }
+.i1{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.i1:hover{
+    border-color: black;
+}
+.ap1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.ap1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 340px;
+
+}
+
+.i1:focus+label ,
+.i1:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.user-img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.b1{
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    width: 50px;
+    height: 57px;
+    top: 1.5px;
+    left: 1px;
+    border-radius: 2px;
+}
+
+.ip-link{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.ip-link:hover{
+    border-color: black;
+}
+.ip-link1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.ip-link1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 420px;
+
+}
+
+.ip-link:focus+label ,
+.ip-link:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.user-img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.b1-link{
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    width: 50px;
+    height: 57px;
+    top: 1.5px;
+    left: 1px;
+    border-radius: 2px;
+}
+
+.role-ip1{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.role-ip1:hover{
+    border-color: black;
+}
+.role-ap1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.role-ap1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 580px;
+
+}
+
+.role-ip1:focus+label ,
+.role-ip1:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.user-img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.role-b1{
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    width: 50px;
+    height: 57px;
+    top: 1.5px;
+    left: 1px;
+    border-radius: 2px;
+}
+
+.git-ip1{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.git-ap1:hover{
+    border-color: black;
+}
+.git-ap1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.git-ap1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 660px;
+
+}
+
+.git-ip1:focus+label ,
+.git-ip1:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.user-img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.git-b1{
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    width: 50px;
+    height: 57px;
+    top: 1.5px;
+    left: 1px;
+    border-radius: 2px;
+}
+
+.ab-ip1{
+    border: 2px solid lightgray ;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    color: black;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-top: 10px;
+    outline: none;
+}
+.ab-ap1:hover{
+    border-color: black;
+}
+.ab-ap1 label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 14px;
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+
+}
+.ab-ap1{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 500px;
+    top: 740px;
+
+}
+
+.ab-ip1:focus+label ,
+.ab-ip1:valid+label{
+    font-size: 12px;
+    color: black;
+    top: 5px;
+    left: 56px;
+    background: #ffff;
+    padding: 0 5px 0 5px;
+}
+.user-img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.ab-b1{
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    width: 50px;
+    height: 57px;
+    top: 1.5px;
+    left: 1px;
+    border-radius: 2px;
+}
+#cre-sta1{
+    background-color: #252931;
+    width: 500px;
+    height: 50px;
+    margin-top: 190%;
+    margin-left: -2%;
+    margin-bottom: 20px;
+}
+#cre-sta1:hover{
+    background-color: #181b20;
+    color: white;
+}
+
+
 
