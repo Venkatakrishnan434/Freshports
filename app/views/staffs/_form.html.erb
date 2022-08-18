@@ -48,32 +48,71 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <!-- <div class="field bg-danger">
+    <%= form.label :name  %>
+   <p class=""> <%= form.text_field :name %></p>
+  </div> -->
 
-  <div class="field">
+  <div class="input-wrap">
+    <input type="text" name="staff[name]" class="input" required>
+    <label for=""> Name</label>
+    <div class="box">
+    <%= image_tag('user.png',alt: "background",class: "user-img") %>
+    </div>
+</div>
+
+  <!-- <div class="field">
     <%= form.label :role %>
     <%= form.text_field :role %>
-  </div>
+  </div> -->
 
-  <div class="field">
+  <div class="input-rap">
+    <input type="text" name="staff[role]" class="inpu" required>
+    <label for=""> Role</label>
+    <div class="bx">
+    <%= image_tag('role.png', alt: "background",class: "user-img") %>
+    </div>
+</div>
+
+  <!-- <div class="field">
     <%= form.label :image %>
     <%= form.file_field :image %>
-  </div>
+  </div> -->
 
-  <div class="field">
+  <div class="input-rap1">
+    <input type="file" name="staff[image]" class="inpu1" required>
+    <label for=""></label>
+    <div class="bx1">
+    <%= image_tag('file.png',alt: "background",class: "user-img") %>
+    </div>
+</div>
+
+  <!-- <div class="field">
     <%= form.label :link %>
     <%= form.text_field :link %>
-  </div>
+  </div> -->
 
-   <div class="field">
+  <div class="input-ap1">
+    <input type="text" name="staff[link]" class="inp1" required>
+    <label for="">Link</label>
+    <div class="bbx1">
+    <%= image_tag('link.png',alt: "background",class: "user-img") %>
+    </div>
+</div>
+
+   <!-- <div class="field">
     <%= form.label :about %>
     <%= form.text_area :about %>
-  </div>
+  </div> -->
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <div class="inpu-ap1">
+    <input type="text" name="staff[about]" class="ip1" required>
+    <label for="">About</label>
+    <div class="bb1">
+    <%= image_tag('user.png',alt: "background",class: "user-img") %>
+    </div>
+</div>
+ 
+
+  <button type="submit" id="cre-sta" class="btn btn-dark"><strong>Create Staff</strong></button>
 <% end %>
