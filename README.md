@@ -17,10 +17,6 @@ https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
    * Ransack - Search capability in a Ruby on Rails application.
    * rubocop - Static code analysis of the ruby codebase.
 
-### EER Diagram
-
-   ![EER](https://user-images.githubusercontent.com/93571040/185898514-b01d161d-4f43-4a2a-801e-403f644a627b.png)
-
 
 ## Registration
    * Registeration includes inputs like username,email,batch number,mobile,password and confirm password.
