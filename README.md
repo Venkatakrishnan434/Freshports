@@ -21,6 +21,7 @@ https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
 
    ![EER](https://user-images.githubusercontent.com/93571040/185898514-b01d161d-4f43-4a2a-801e-403f644a627b.png)
 
+
 ## Registration
    * Registeration includes inputs like username,email,batch number,mobile,password and confirm password.
    * All inputs fields are mandatory
