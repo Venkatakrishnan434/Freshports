@@ -24,7 +24,7 @@ https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
    * Students will be able to see  their portfolio and also create their portfolio.
    * Coaches will be able to do the add their own portfolio and  students portfolio.
    * Admins only delete the portfolio.
-   
+
 ### Name reason
    * fresh + ports(means portfolio)
 ### Our motive
@@ -35,7 +35,7 @@ https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
 
 ### My future plan
    * In my project admin only edit the staff and student page, but they wants to change their profile.
-   * So they need to send the query to the admin for that I will create a query box in which the user can send the message to the admin regarding changes.
+   * So they need to send the query to the admin for that I will create a query box in which the user can send the message to the admin regarding changes
 
 ## Registration
    * Registeration includes inputs like username,email,batch number,mobile,password and confirm password.
