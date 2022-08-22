@@ -7,6 +7,20 @@
  ### Sonarcloud Link 
 https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
 
+### What is freshports?
+   * freshports is a portfolio management software.
+   * It is based on our academy portfolio.
+   * This can be used by both students(users) and the coaches(users).
+   * Students will be able to see  their portfolio and also create their portfolio.
+   * Coaches will be able to do the add their own portfolio and  students portfolio.
+   * Admins only delete the portfolio.
+
+
+### Name reason 
+   * fresh + ports(means portfolio)
+
+### Our motive
+   * Portfolios are everything, promises are nothing. Do the work.
 
 
 ### Why I create this:
@@ -16,6 +30,15 @@ https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
 
    * Ransack - Search capability in a Ruby on Rails application.
    * rubocop - Static code analysis of the ruby codebase.
+
+### Libraries
+   * Active Storage - Facilitates uploading files to a cloud storage service and attaching those files to Active Record objects.
+
+
+
+### My future plan
+   * In my project admin only edit the staff and student page, but they wants to change their profile.
+   * So they need to send the query to the admin for that I will create a query box in which the user can send the message to the admin regarding changes.
 
 
 ## Registration
