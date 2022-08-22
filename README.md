@@ -1,8 +1,12 @@
 # FRESHPORTS
 
+   ### Heruko Link : 
+   ### Sonarcloud Link :  https://sonarcloud.io/project/overview?id=Venkatakrishnan434_Freshports
 
 
- * We are all FWSA batch 2 students. After 300 days we have an interview for our internship. At that time, the interviewer will review our github  link, portfolio and also see our final project. The Interviewer will see all these things in my website. It can be easy to see and it’s helpful for our Freshworks software academy and also helpful for the next batch. The two things that I want to proudly do are create a website for FWSA and the interviewer should use my website to review our projects.
+
+### Why I create this:
+   * We are all FWSA batch 2 students. After 300 days we have an interview for our internship. At that time, the interviewer will review our github  link, portfolio and also see our final project. The Interviewer will see all these things in my website. It can be easy to see and it’s helpful for our Freshworks software academy and also helpful for the next batch. The two things that I want to proudly do are create a website for FWSA and the interviewer should use my website to review our projects.
 
 ## Registration
    * Registeration includes inputs like username,email,batch number,mobile,password and confirm password.
